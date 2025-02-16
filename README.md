@@ -1,2 +1,5 @@
 # face_vectors
-Python service to detect faces and their time sequences in a video clip
+Python service to detect faces and their time sequences in a video clip.   There is a dockerfile which should build this porperly,
+and when run will expose an endpoint on port 5000.   The extracted face vectors are stored in chromaDB, which lets us query for 
+other "close" faces frame-by-frame.   Simple debugging output displays the detected frames and which faceIDs are detected in 
+each.
