@@ -1,0 +1,25 @@
+
+1) stream input
+2) break into frames
+   params: frame rate
+
+3) find faces in each frame
+   save in local ephemeral db, with vector and face pic
+   
+4) find unique people and their appearance
+   param: closeness
+   1) walk frames?
+   2) some query across the ephemeral db?
+   3) resolve which is closest to average and keep face pic
+
+5) remove stutter
+   param: stutter amount (time)
+   1) re-resolve average and closest face pic to average
+
+6) final data insert 
+   save example face file
+   compute final average of each person
+   insert person, clipID into columnar
+   insert clipid, person, timeranges into relational
+ 
+
